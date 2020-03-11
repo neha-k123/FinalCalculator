@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="hello">hello!</string>
-    <string name="app_name">best calculator ever</string>
+    <string name="app_name">neha\'s special calculator</string>
 
-    <string name="result_default">0</string>
+    <string name="result_default">result here</string>
 
     <string name="buttonDivide">/</string>
 
@@ -11,4 +11,22 @@
     <string name="buttonSeven">7</string>
     <string name="buttonEight">8</string>
     <string name="buttonNine">9</string>
+
+    <string name="buttonMutiply">*</string>
+
+    <string name="buttonFour">4</string>
+    <string name="buttonFive">5</string>
+    <string name="buttonSix">6</string>
+
+    <string name="buttonMinus">-</string>
+
+    <string name="buttonOne">1</string>
+    <string name="buttonTwo">2</string>
+    <string name="buttonThree">3</string>
+
+    <string name="buttonClear">clear</string>
+    <string name="buttonResult">=</string>
+
+    <string name="buttonZero">0</string>
+    <string name="buttonPlus">+</string>
 </resources>

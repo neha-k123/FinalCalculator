@@ -3,4 +3,14 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="button_7">#E2B2BB</color>
+    <color name="button_8">#E2B2BB</color>
+    <color name="button_9">#E2B2BB</color>
+    <color name="button_4">#C9A0E6</color>
+    <color name="button_5">#C9A0E6</color>
+    <color name="button_6">#C9A0E6</color>
+    <color name="button_1">#CEF3A274</color>
+    <color name="button_2">#CEF3A274</color>
+    <color name="button_3">#CEF3A274</color>
+    <color name="button_0">#CEF3A274</color>
 </resources>
