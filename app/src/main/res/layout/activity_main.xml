@@ -31,6 +31,8 @@
             android:paddingRight="4pt">
             <Button
                 android:text="@string/buttonSeven"
+                android:paddingRight="2dp"
+                android:paddingLeft="2dp"
                 android:textSize="14pt"
                 android:id="@+id/button7"
                 android:layout_width="25pt"
@@ -40,6 +42,8 @@
                 android:onClick="handleClick" />
             <Button
                 android:text="@string/buttonEight"
+                android:paddingRight="2dp"
+                android:paddingLeft="2dp"
                 android:textSize="14pt"
                 android:id="@+id/button8"
                 android:layout_height="25pt"
