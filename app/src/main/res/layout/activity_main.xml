@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    >
+    android:layout_height="fill_parent">
     <TableLayout
         android:id="@+id/tableLayout1"
         android:layout_height="fill_parent"
@@ -25,8 +25,8 @@
             android:layout_width="match_parent"
             android:layout_marginTop="5pt"
             android:id="@+id/tableRow2"
-            android:paddingTop="20dp"
-            android:paddingBottom="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
             android:paddingLeft="4pt"
             android:paddingRight="4pt">
             <Button
@@ -74,8 +74,8 @@
             android:layout_width="match_parent"
             android:layout_marginTop="1pt"
             android:id="@+id/tableRow2"
-            android:paddingTop="20dp"
-            android:paddingBottom="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
             android:paddingLeft="4pt"
             android:paddingRight="4pt">
             <Button
@@ -120,8 +120,8 @@
             android:layout_width="match_parent"
             android:layout_marginTop="1pt"
             android:id="@+id/tableRow2"
-            android:paddingTop="20dp"
-            android:paddingBottom="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
             android:paddingLeft="4pt"
             android:paddingRight="4pt">
             <Button
@@ -167,8 +167,8 @@
             android:layout_width="match_parent"
             android:layout_marginTop="1pt"
             android:id="@+id/tableRow2"
-            android:paddingTop="20dp"
-            android:paddingBottom="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
             android:paddingLeft="4pt"
             android:paddingRight="4pt">
             <Button
@@ -204,5 +204,44 @@
                 android:layout_weight="1"
                 android:onClick="handleClick" />
         </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="1pt"
+            android:id="@+id/tableRow2"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="4pt"
+            android:paddingRight="4pt">
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="282dp"
+                android:text="Name"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+        </TableRow>
+<!--        <TableRow-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_marginTop="1pt"-->
+<!--            android:id="@+id/tableRow2"-->
+<!--            android:paddingTop="10dp"-->
+<!--            android:paddingBottom="30dp"-->
+<!--            android:paddingLeft="50pt"-->
+<!--            android:paddingRight="4pt">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/salary"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Salary"-->
+<!--                android:textColor="#000"-->
+<!--                android:textSize="20sp" />-->
+<!--        </TableRow>-->
     </TableLayout>
+
+
 </LinearLayout>

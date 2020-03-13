@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -22,12 +24,31 @@ public class MainActivity extends AppCompatActivity {
 
     private Set<String> operators;
 
+    String JSON_STRING = "{\"employee\":{\"name\":\"Neha\"}}";
+    String name;
+    TextView employeeName;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         result = (TextView) findViewById(R.id.result);
+        employeeName = (TextView) findViewById(R.id.name);
+
+        try {
+            // get JSONObject from JSON file
+            JSONObject obj = new JSONObject(JSON_STRING);
+            // fetch JSONObject named employee
+            JSONObject employee = obj.getJSONObject("employee");
+            // get employee name and salary
+            name = employee.getString("name");
+            // set employee name and salary in TextView's
+            employeeName.setText("Name: "+name);
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
     }
 
 
