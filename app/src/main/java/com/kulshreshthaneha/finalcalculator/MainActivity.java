@@ -51,6 +51,12 @@ public class MainActivity extends AppCompatActivity {
         editor = sharedPreferences.edit();
         editor.apply();
 
+        int value = sharedPreferences.getInt("onCreate", 0);
+        int finished = value + 1;
+        editor.putInt("onCreate", finished);
+        editor.apply();
+        but.setText("# of times app ran: "+finished);
+
         final Fragment first = new FirstFragment();
         findViewById(R.id.fragment1).setOnClickListener(new View.OnClickListener() {
             @Override

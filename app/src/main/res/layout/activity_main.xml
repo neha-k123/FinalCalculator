@@ -222,12 +222,20 @@
                 android:textColor="#000"
                 android:textSize="20sp" />
             <TextView
+                android:id = "@+id/click"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:textSize="20sp"
+                android:layout_marginTop = "27dp"
+                android:text = "click ->"/>
+            <TextView
                 android:id = "@+id/fragment1"
                 android:layout_width = "wrap_content"
                 android:layout_height = "wrap_content"
 
                 android:layout_marginTop = "27dp"
                 android:text = "fragment1"/>
+
 
         </TableRow>
 <!--        <TableRow-->
