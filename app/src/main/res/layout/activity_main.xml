@@ -209,7 +209,7 @@
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:layout_marginTop="1pt"
-            android:id="@+id/tableRow2"
+            android:id="@+id/layout"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
             android:paddingLeft="4pt"
@@ -221,6 +221,13 @@
                 android:text="Name"
                 android:textColor="#000"
                 android:textSize="20sp" />
+            <TextView
+                android:id = "@+id/fragment1"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+
+                android:layout_marginTop = "27dp"
+                android:text = "fragment1"/>
 
         </TableRow>
 <!--        <TableRow-->

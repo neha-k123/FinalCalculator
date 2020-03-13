@@ -3,6 +3,8 @@ import java.util.HashSet;
 import java.util.Set;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,10 +13,15 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 public class MainActivity extends AppCompatActivity {
 
     private TextView result;
+
+    private TextView but;
 
     private String operand;
 
@@ -24,7 +31,10 @@ public class MainActivity extends AppCompatActivity {
 
     private Set<String> operators;
 
-    String JSON_STRING = "{\"employee\":{\"name\":\"Neha\"}}";
+    SharedPreferences sharedPreferences;
+    SharedPreferences.Editor editor;
+
+    String JSON_STRING = "{\"employee\":{\"name\":\"1\"}}";
     String name;
     TextView employeeName;
 
@@ -35,6 +45,19 @@ public class MainActivity extends AppCompatActivity {
 
         result = (TextView) findViewById(R.id.result);
         employeeName = (TextView) findViewById(R.id.name);
+        but = findViewById(R.id.fragment1);
+
+        sharedPreferences = getSharedPreferences("runtime", Context.MODE_PRIVATE);
+        editor = sharedPreferences.edit();
+        editor.apply();
+
+        final Fragment first = new FirstFragment();
+        findViewById(R.id.fragment1).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                but.setText("hello!");
+            }
+        });
 
         try {
             // get JSONObject from JSON file
@@ -44,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
             // get employee name and salary
             name = employee.getString("name");
             // set employee name and salary in TextView's
-            employeeName.setText("Name: "+name);
+            employeeName.setText("app version: "+name);
 
         } catch (JSONException e) {
             e.printStackTrace();
